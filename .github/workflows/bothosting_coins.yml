@@ -33,7 +33,7 @@ jobs:
 
       - name: 🐍 安装 Python 依赖
         run: |
-          pip install httpx hcaptcha-challenger playwright
+          pip install httpx hcaptcha-challenger playwright pyyaml
           playwright install chromium --with-deps
 
       - name: 🛡️ 启动 GOST 代理转发
